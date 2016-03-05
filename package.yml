@@ -1,6 +1,6 @@
 name       : cgmanager
 version    : 0.39
-release    : 1
+release    : 2
 source     :
     - https://linuxcontainers.org/downloads/cgmanager/cgmanager-0.39.tar.gz : 9e65487fb4e4aa0a6acd87ba7f8f00b8007d8c52608aa6d411e72e6fe9445b7b
 license    : LGPL-2.1

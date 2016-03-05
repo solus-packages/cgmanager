@@ -2,8 +2,8 @@
     <Source>
         <Name>cgmanager</Name>
         <Packager>
-            <Name>Justin Zobel</Name>
-            <Email>justin@solus-project.com</Email>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
         </Packager>
         <License>LGPL-2.1</License>
         <Summary xml:lang="en">Another daemon for managing control groups</Summary>
@@ -18,11 +18,11 @@
 </Description>
         <PartOf>system.utils</PartOf>
         <Files>
-            <Path fileType="data">/lib64/security/pam_cgm.so</Path>
-            <Path fileType="data">/usr/share/cgmanager</Path>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="data">/usr/share/cgmanager</Path>
+            <Path fileType="data">/lib64/security/pam_cgm.so</Path>
         </Files>
     </Package>
     <Package>
@@ -35,18 +35,18 @@
             <Dependency release="current">cgmanager</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib64/lib*.so</Path>
             <Path fileType="data">/usr/lib64/pkgconfig</Path>
-            <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2015-11-26</Date>
+        <Update release="2">
+            <Date>2016-03-05</Date>
             <Version>0.39</Version>
             <Comment>Packaging update</Comment>
-            <Name>Justin Zobel</Name>
-            <Email>justin@solus-project.com</Email>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
         </Update>
     </History>
 </PISI>
