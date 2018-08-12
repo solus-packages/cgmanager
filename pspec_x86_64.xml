@@ -2,8 +2,8 @@
     <Source>
         <Name>cgmanager</Name>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Packager>
         <License>LGPL-2.1</License>
         <PartOf>system.utils</PartOf>
@@ -20,11 +20,40 @@
         <PartOf>system.utils</PartOf>
         <Files>
             <Path fileType="data">/lib64/security/pam_cgm.so</Path>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/cgm</Path>
             <Path fileType="library">/usr/lib64/cgmanager/cgmanager/cgm-release-agent</Path>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="executable">/usr/sbin</Path>
-            <Path fileType="data">/usr/share/cgmanager</Path>
+            <Path fileType="library">/usr/lib64/libcgmanager.so.0</Path>
+            <Path fileType="library">/usr/lib64/libcgmanager.so.0.0.0</Path>
+            <Path fileType="executable">/usr/sbin/cgmanager</Path>
+            <Path fileType="executable">/usr/sbin/cgproxy</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/runtests.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test01.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test02.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test03.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test04.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test05.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test06.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test07.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test08.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test09.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test10.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test11.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test12.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test13.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test14.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test15.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test16.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test17.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test18.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test19.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test20.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test21.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test22.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test23.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test24.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test25.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test26.sh</Path>
+            <Path fileType="data">/usr/share/cgmanager/tests/test27.sh</Path>
         </Files>
     </Package>
     <Package>
@@ -34,21 +63,22 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">cgmanager</Dependency>
+            <Dependency release="5">cgmanager</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/cgmanager/cgmanager-client.h</Path>
+            <Path fileType="header">/usr/include/cgmanager/cgmanager.h</Path>
+            <Path fileType="library">/usr/lib64/libcgmanager.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/libcgmanager.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-03-02</Date>
+        <Update release="5">
+            <Date>2018-07-29</Date>
             <Version>0.41</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Update>
     </History>
 </PISI>

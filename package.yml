@@ -1,6 +1,6 @@
 name       : cgmanager
 version    : '0.41'
-release    : 4
+release    : 5
 source     :
     - https://linuxcontainers.org/downloads/cgmanager/cgmanager-0.41.tar.gz : 29b155befb3ac233d5d29dbca7c791c8138bab01bfa78ea4757ebb88ce23b458
 license    : LGPL-2.1
