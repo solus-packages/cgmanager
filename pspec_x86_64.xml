@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Another daemon for managing control groups</Summary>
         <Description xml:lang="en">Another daemon for managing control groups
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>cgmanager</Name>
@@ -63,7 +63,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="6">cgmanager</Dependency>
+            <Dependency release="7">cgmanager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/cgmanager/cgmanager-client.h</Path>
@@ -73,9 +73,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="6">
-            <Date>2018-12-25</Date>
-            <Version>0.41</Version>
+        <Update release="7">
+            <Date>2019-06-12</Date>
+            <Version>0.42</Version>
             <Comment>Packaging update</Comment>
             <Name>Bryan T. Meyers</Name>
             <Email>bmeyers@datadrake.com</Email>

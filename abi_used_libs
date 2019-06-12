@@ -3,3 +3,5 @@ libdbus-1.so.3
 libnih-dbus.so.1
 libnih.so.1
 libpam.so.0
+libpopt.so.0
+libpthread.so.0

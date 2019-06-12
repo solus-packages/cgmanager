@@ -1,17 +1,18 @@
 name       : cgmanager
-version    : '0.41'
-release    : 6
+version    : '0.42'
+release    : 7
 source     :
-    - https://github.com/lxc/cgmanager/archive/v0.41.tar.gz : 7600bda5f1b80e6c09f4734fd288c0f3973aa5c80eec2ff3fe9e6c60628747e8
+    - https://github.com/lxc/cgmanager/archive/v0.42.tar.gz : 11fa82cd2a7f5c9d116e1182f803bd57cde5503b21bd1f25dc7b7f883c9775f8
 license    : LGPL-2.1-or-later
 component  : system.utils
 summary    : Another daemon for managing control groups
 description: |
     Another daemon for managing control groups
 builddeps  :
+    - pkgconfig(dbus-1)
     - pkgconfig(libnih)
     - pkgconfig(libnih-dbus)
-    - pkgconfig(dbus-1)
+    - pkgconfig(popt)
 setup      : |
     %reconfigure --disable-static
 build      : |
