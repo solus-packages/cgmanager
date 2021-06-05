@@ -34,6 +34,7 @@ libcgmanager.so.0:cgmanager_get_value
 libcgmanager.so.0:cgmanager_get_value_scm
 libcgmanager.so.0:cgmanager_get_value_scm_sync
 libcgmanager.so.0:cgmanager_get_value_sync
+libcgmanager.so.0:cgmanager_interfaces
 libcgmanager.so.0:cgmanager_list_children
 libcgmanager.so.0:cgmanager_list_children_scm
 libcgmanager.so.0:cgmanager_list_children_scm_sync
@@ -52,6 +53,7 @@ libcgmanager.so.0:cgmanager_move_pid_abs_sync
 libcgmanager.so.0:cgmanager_move_pid_scm
 libcgmanager.so.0:cgmanager_move_pid_scm_sync
 libcgmanager.so.0:cgmanager_move_pid_sync
+libcgmanager.so.0:cgmanager_org_linuxcontainers_cgmanager0_0
 libcgmanager.so.0:cgmanager_ping
 libcgmanager.so.0:cgmanager_ping_sync
 libcgmanager.so.0:cgmanager_prune
@@ -70,3 +72,18 @@ libcgmanager.so.0:cgmanager_set_value
 libcgmanager.so.0:cgmanager_set_value_scm
 libcgmanager.so.0:cgmanager_set_value_scm_sync
 libcgmanager.so.0:cgmanager_set_value_sync
+pam_cgm.so:cgm_autoremove
+pam_cgm.so:cgm_cg_has_tasks
+pam_cgm.so:cgm_cg_set_value
+pam_cgm.so:cgm_chown
+pam_cgm.so:cgm_clear_cgroup
+pam_cgm.so:cgm_create
+pam_cgm.so:cgm_dbus_connect
+pam_cgm.so:cgm_dbus_disconnect
+pam_cgm.so:cgm_enter
+pam_cgm.so:cgm_escape
+pam_cgm.so:cgm_list_children
+pam_cgm.so:cgm_list_controllers
+pam_cgm.so:do_close_session
+pam_cgm.so:pam_sm_close_session
+pam_cgm.so:pam_sm_open_session
